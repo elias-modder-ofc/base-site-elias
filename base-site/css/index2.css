@@ -1,0 +1,430 @@
+  :root{
+    --color-white: #fff;
+    --color-dark1: rgb(39, 39, 39);
+    --color-dark2: grenn;
+    --color-dark3: black;
+    --color-dark4: #1c1c1c;
+    --color-dark5: #343434;
+    --color-purple: #b040ff;
+}
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+min-height: 100vh;
+background-color: #1C1C1C;
+background-size: 200% 200%;
+animation: color 2.7s ease infinite;
+color: white;
+}
+
+@keyframes color {
+0% {
+background-position: 0% 50%;
+}
+
+50% {
+background-position: 100% 50%;
+}
+
+100% {
+background-position: 0% 50%;
+}
+}
+
+.side-bar{
+background: rgba(0, 0, 0, 0.2);
+backdrop-filter:blur(15px);
+width: 290px;
+height: 100vh;
+position: fixed;
+top:0;
+left: -100%;
+overflow-y: auto;
+transition: 0.5s ease;
+transition-property: left;
+}
+
+.side-bar.active{
+left: 0;
+}
+
+.side-bar .menu{
+width: 100%;
+margin-top: 35px;
+text-shadow: 7px 7px 7px black;
+}
+
+.side-bar .menu .item{
+position:relative;
+cursor:pointer;
+}
+
+.side-bar .menu .item a{
+color: #fff;
+font-size: 16px;
+text-decoration: none;
+display: block;
+padding: 5px 30px;
+line-height: 40px;
+}
+
+.side-bar .menu .item a:hover{
+transition: 0.3s ease;
+
+}
+
+.side-bar .menu .item i{
+margin-right: 10px;
+}
+
+.side-bar .menu .item a .dropdown{
+background: rgba(000,000,000 , 0.0);
+position: absolute;
+right:0;
+margin: 13px;
+transition: 0.3s ;
+}
+.sub-btn{
+text-shadow: 7px 7px 7px black;
+background: rgba(000,000,000 , 0.0);
+}
+.side-bar .menu .item .sub-menu{
+background: transparent;
+display:none;
+box-shadow: 0 0 5px white;
+
+}
+
+.side-bar .menu .item .sub-menu a{
+padding-left: 80px;
+box-shadow: 0 0 5px white;
+
+}
+
+.rotate{
+transform: rotate(90deg);
+}
+.item{
+box-shadow: 0 0 2px white;
+border-radius: 9px;
+margin: 5px;
+}
+.close-btn{
+position: absolute;
+color: #fff;
+font-size: 20px;
+right: 0;
+margin: 25px;
+cursor: pointer;
+
+}
+
+.menu-btn{
+position: absolute;
+color: #fff;
+font-size: 25px;
+margin: 17px;
+cursor:pointer;
+
+}
+.fe img{
+position: absolute;
+width: 30px;
+position: absolute;
+margin: 15px;
+margin-left: 90%;
+border-radius: 50%;
+box-shadow: 0 0 30px black;
+}
+h1{
+text-align: center;
+margin-top: 25px;
+}
+
+.ab i{
+border-radius: 50%;
+text-align: center;
+
+}
+.txt i {
+text-align: center;
+margin-top: 25px;
+font-size: 25px;
+margin-left: 25px;
+right: 1px;
+
+}
+.tutotxt {
+background-color: var(--color-dark3);
+border-radius: 7px;  
+margin: 24px;
+box-shadow: 0 0 7px darkgray;
+
+}
+.fotos {
+width: 90%;
+border-radius: 7px;
+}
+.tutotxtt{
+
+margin: 7px;
+text-align: center;
+}
+.aaaa {
+
+margin: 5px;
+}
+.cabeca{
+background-color: var(--color-dark3);
+
+text-align: center;
+padding: 20px;
+box-shadow: 10px 10px 10px black;
+box-shadow: 0 0 7px darkgray;
+}
+.final{
+background-color: var(--color-dark3);
+
+margin-bottom: 0;
+text-align: center;
+padding: 20px;
+box-shadow: 10px 10px 10px black;
+box-shadow: 0 0 7px darkgray;
+}
+
+.ft{
+position: absolute;
+font-size: 20px;
+position: absolute;
+margin: 23px;
+margin-left: 90%;
+
+}
+.det{
+position: absolute;
+font-size: 18px;
+position: absolute;
+margin: 22px;
+margin-left: 79.9%;
+
+
+}
+ga{
+display: none;
+margin-top: 25px;
+background-color: var(--color-dark3);
+}
+.suba a{
+position: absolute;
+font-size: 20px;
+position: absolute;
+margin: 19px;
+margin-left: -720%;
+
+padding: 20px 43px;
+background-color: var(--color-dark3);
+transition: 0.5s ease;
+transition-property: left;
+
+}
+.suba p{
+position: absolute;
+font-size: 13px;
+position: absolute;
+margin-left: -500%;
+
+padding: 20px 40px;
+background-color: var(--color-dark1);
+box-shadow: 0 0 7px black;
+
+}
+.fe img{
+border: solid 1px white;
+}
+.visitas{
+background-color: var(--color-dark3);
+border-radius: 7px;  
+margin: 24px;
+box-shadow: 0 0 7px black;
+padding: 20px 30px;
+}
+
+.visitas img{
+width: 25%;
+}
+.ip{
+background-color: var(--color-dark3);
+border-radius: 7px;  
+margin: 24px;
+box-shadow: 0 0 7px black;
+padding: 20px 30px;
+
+}
+
+.amigo{
+margin-top: 90%;
+}
+.menuzin {
+
+padding: 20px 30px;
+}
+.menuzin a{
+text-decoration: none;
+
+}
+details {
+transition: 6.3s;
+}
+.sup{
+text-align: center;
+}
+.content {
+border-radius: 20px;
+overflow: hidden;
+}
+
+.navigation {
+
+display: flex;
+}
+
+.nov{
+
+text-align: center;
+}
+
+.bar {
+
+width: 20%;
+height: 20%;
+border: 2px solid red;
+margin: 6px;
+margin-top: 0;
+border-radius: 15px;
+cursor: pointer;
+transform: .5s ease;
+}
+
+.bar:hover {
+background-color: darkred;
+
+}
+
+input {
+display: none;
+}
+
+.ain{
+width: 95%;
+}
+
+.slides {
+display: flex;
+width: 500%;
+height: 100%;
+}
+
+.slide {
+width: 20%;
+transition: .6s;
+}
+.content .slide img {
+width: 97%;
+border-radius: 15px;
+}
+#slide1:checked ~ .s1 {
+margin-left: -0%;
+} 
+
+#slide2:checked ~ .s1 {
+margin-left: -20%;
+} 
+
+#slide3:checked ~ .s1 {
+margin-left: -40%;
+} 
+
+#slide4:checked ~ .s1 {
+margin-left: -60%;
+} 
+
+#slide5:checked ~ .s1 {
+margin-left: -80%;
+}
+
+.laranja{
+background-color: orange;
+transition: all 0.25s ease-in-out;
+}
+.vermelho{
+background-color: red;
+transition: all 0.25s ease-in-out;
+}
+.purpura{
+background-color: purple;
+transition: all 0.25s ease-in-out;
+}
+
+.contaimer button{
+padding: 10px 10px;
+border-radius: 50%;
+
+cursor: pointer;
+font-size: 22px;
+font-weight: 300;
+margin: 0 px;
+border: 0;
+}
+
+div.contaimer{
+padding: 10px 20px;
+min-width: 90vw;
+text-align: center;
+}
+  </style>
+<link rel="shortcut icon" href="https://telegra.ph/file/a3374ddefcec357cd06b2.jpg" type="image/x-icon" />
+  <title>YASMIM-APIS</title>
+    <!-- STYLE -->
+<style>
+.laranja{
+    background-color: orange;
+    transition: all 0.25s ease-in-out;
+    color: white;
+}
+.vermelho{
+    background-color: red;
+    transition: all 0.25s ease-in-out;
+    color: white;
+}
+.purpura{
+    background-color: white;
+    transition: all 0.25s ease-in-out;
+    color: white;
+}
+
+.contaimer button{
+    padding: 10px 10px;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 300;
+    margin: 0 10px;
+}
+
+div.contaimer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 90vw;
+    text-align: center;
+}
+img{
+  width: 100%;
+}

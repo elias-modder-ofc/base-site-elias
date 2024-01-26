@@ -1,0 +1,43 @@
+Arguments: 
+  /data/data/com.termux/files/usr/bin/node /data/data/com.termux/files/usr/share/yarn/bin/yarn.js install
+
+PATH: 
+  /data/data/com.termux/files/usr/bin
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  20.2.0
+
+Platform: 
+  android arm
+
+Trace: 
+  Error: EPERM: operation not permitted, symlink '../../../mime/cli.js' -> '/storage/emulated/0/site/node_modules/send/node_modules/.bin/mime'
+
+npm manifest: 
+  {
+    "name": "elias",
+    "version": "1.0.0",
+    "description": "ELIAS RESET API",
+    "main": "index.js",
+    "scripts": {
+      "test": "node index.js"
+    },
+    "author": "Elias Modder Ofc",
+    "license": "ISC",
+    "dependencies": {
+      "cors": "^2.8.5",
+      "express": "^4.18.2",
+      "fs": "^0.0.1-security",
+      "fs-extra": "^11.2.0",
+      "linkifyjs": "^4.1.3"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
